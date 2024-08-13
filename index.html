@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tanush's Restaurant</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">Tanush's Restaurant</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h1>Welcome to Tanush's Restaurant</h1>
+        <p>Delicious food, great atmosphere, and amazing service!</p>
+        <a href="#menu" class="btn">View Menu</a>
+    </section>
+    
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <h2>Our Menu</h2>
+
+        <div class="menu-items" >
+            <div class="menu-item" id="str">
+                <h3>Pizza</h3>
+                <p>Freshly baked with a variety of toppings.</p>
+                <span>$12.99</span>
+                <button type="button" onclick="ordernow()">Order</button>
+            </div>
+            <div class="menu-item" id="str">
+                <h3>Pasta</h3>
+                <p>Classic Italian pasta with rich flavors.</p>
+                <span>$10.99</span>
+                <button type="button" onclick="ordernow()">order</button>
+            </div>
+            <div class="menu-item" id="str">
+                <h3>Burger</h3>
+                <p>Juicy and flavorful, served with fries.</p>
+                <span>$8.99</span>
+                <button type="button" onclick="ordernow()">order</button>
+            </div>
+            <div class = "menu-item" id="str">
+                <h3>chapati</h3>
+                <p>simple palin wheat roti</p>
+                <span>$1.34</span>
+                <button type="button" onclick="ordernow()">order</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <br>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <br>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <br>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    
+</body>
+</html>
